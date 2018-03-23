@@ -7,20 +7,20 @@
   
   
   
-  <title>什么是生命周期 | 懒人漫游</title>
+  <title>几种常见的布局 | 懒人漫游</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生命周期有哪些钩子函数">
-<meta name="keywords" content="vue">
+  <meta name="description" content="几种常见的布局： 理解布局的概念">
+<meta name="keywords" content="flex和响应式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么是生命周期">
-<meta property="og:url" content="http://yoursite.com/2018/03/23/草撒旦教的/index.html">
+<meta property="og:title" content="几种常见的布局">
+<meta property="og:url" content="http://yoursite.com/2018/03/23/常见的几种布局/index.html">
 <meta property="og:site_name" content="懒人漫游">
-<meta property="og:description" content="生命周期有哪些钩子函数">
+<meta property="og:description" content="几种常见的布局： 理解布局的概念">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-22T18:54:37.787Z">
+<meta property="og:updated_time" content="2018-03-23T22:24:06.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="什么是生命周期">
-<meta name="twitter:description" content="生命周期有哪些钩子函数">
+<meta name="twitter:title" content="几种常见的布局">
+<meta name="twitter:description" content="几种常见的布局： 理解布局的概念">
   
     <link rel="alternative" href="/atom.xml" title="懒人漫游" type="application/atom+xml">
   
@@ -190,7 +190,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/vue/" style="font-size: 10px;">vue</a>
+                        <a href="/tags/flex和响应式/" style="font-size: 10px;">flex和响应式</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a>
                     </div>
                 </section>
                 
@@ -263,10 +263,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-草撒旦教的" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-常见的几种布局" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2018/03/23/草撒旦教的/" class="article-date">
+      <a  href="/2018/03/23/常见的几种布局/" class="article-date">
       <time datetime="2018-03-22T16:58:21.000Z" itemprop="datePublished">2018-03-23</time>
 </a>
 
@@ -281,7 +281,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      什么是生命周期
+      几种常见的布局
     </h1>
   
 
@@ -290,10 +290,14 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/布局/">布局</a>
+    </div>
+
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flex和响应式/">flex和响应式</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -303,8 +307,53 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>生命周期有哪些钩子函数</p>
+        <p><strong> 几种常见的布局：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>理解布局的概念<br><a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
 
+<h2 id="一-理解布局的概念"><a href="#一-理解布局的概念" class="headerlink" title="一:理解布局的概念"></a>一:理解布局的概念</h2><ul>
+<li><h3 id="静态布局"><a href="#静态布局" class="headerlink" title="静态布局:"></a>静态布局:</h3><p>  浏览器中显示网页,通过横向或者纵向滚动条来查阅改页面内容,意思就是不管浏览器尺寸具体是多少，网页布局就按照当时写代码的布局来布置；</p>
+</li>
+<li><h3 id="弹性布局"><a href="#弹性布局" class="headerlink" title="弹性布局:"></a>弹性布局:</h3><p>  flex局部CSS3引入的一个很强大的布局方式,用来替代以前Web开发人员使用的一些复杂而易错hacks方法</p>
+<p>  其中flex-flow是flex-direction和flex-wrap属性的简写形式,语法如下:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">flex-flow:||</span><br><span class="line">flex-direction: row | row-reverse(相反) | column | colum-reverse;</span><br><span class="line">flex-wrap: nowrap | wrap | wrap-reverse</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="自适应布局"><a href="#自适应布局" class="headerlink" title="自适应布局"></a>自适应布局</h3><p>  自适应布局（Adaptive）的特点是分别为不同的屏幕分辨率定义布局。布局切换时页面元素发生改变，但在每个布局中，页面元素不随窗口大小的调整发生变化。你可以把自适应布局看作是静态布局的一个系列。就是说你看到的页面，里面元素的位置会变化而大小不会变化</p>
+</li>
+<li><h3 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,inital-scale=1.0,maximum-scale=1.0,minimum-scale=1.0</span><br><span class="line">,user-scalable=no&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>name=”viewport” 名称=视图</li>
+<li>width=device-width 页面宽度=设备宽度(可以理解为获取你手机的屏幕宽度)</li>
+<li>initial-scale - 初始的缩放比例</li>
+<li>minimum-scale - 允许用户缩放到的最小比例</li>
+<li>maximum-scale - 允许用户缩放到的最大比例</li>
+<li>user-scalable - 用户是否可以手动缩放</li>
+</ul>
+</li>
+</ul>
+<p>在做响应式布局的时候,必须以及一定要加上的重要头部代码.分别为不同的屏幕分辨率定义布局,同时，在每个布局中,即页面元素宽度随着窗口调整而自动适配。每个屏幕分辨率下面会有一个布局样式，同时位置会变而且大小也会变。</p>
+<h2 id="二-响应式布局的步骤"><a href="#二-响应式布局的步骤" class="headerlink" title="二:响应式布局的步骤:"></a>二:响应式布局的步骤:</h2><ul>
+<li><h3 id="布局及设置meta标签"><a href="#布局及设置meta标签" class="headerlink" title="布局及设置meta标签:"></a>布局及设置meta标签:</h3><p>  在写响应式布局之前,可以先完成非响应式布局,页面固定宽度大小,如果完成了非响应式那么我在去添加媒体查询（Media Query)和响应式代码。这种操作更容易实现响应式特性。</p>
+<p>  当你完成当你已经完成了无响应的网站，做的第一件事是在你的 HTML 页面，粘贴下面的代码到和标签之间。这将设置屏幕按1：1的尺寸显示，在 iPhone 和其他智能手机的浏览器提供网站全视图浏览，并禁止用户缩放页面。</p>
+<p>  <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,
+minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
+</li>
+<li><h3 id="通过媒体查询来设置样式-media-query"><a href="#通过媒体查询来设置样式-media-query" class="headerlink" title="通过媒体查询来设置样式 :media query"></a>通过媒体查询来设置样式 :media query</h3><p>  media query是响应式设计的核心，它能够和浏览器进行沟通，告诉浏览器页面如何呈现，假如一个终端的分辨率小于980px，那么可以这样写</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width:980px)&#123;</span><br><span class="line">    #head&#123;&#125;</span><br><span class="line">    #content&#123;&#125;</span><br><span class="line">    #footer&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>  这里面的样式会覆盖掉之前所定义的样式。</p>
+</li>
+</ul>
+<ul>
+<li><h3 id="设置多种视图宽度"><a href="#设置多种视图宽度" class="headerlink" title="设置多种视图宽度"></a>设置多种视图宽度</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/**ipad**/</span><br><span class="line">@media only screen and (min-width:768px)and(max-width:1024px)&#123;&#125;</span><br><span class="line">/**iphone**/</span><br><span class="line">@media only screen and (width:320px)and (width:768px)&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>  假如需要兼容ipad和iphone,就可以使用种写法.</p>
+</li>
+<li><h3 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h3><p>  在做pc端的时候,我们习惯于写px作为像素单位,但是在移动端,在做响应式<br>  布局的时候,我们需要将字体也做成响应式的.根据屏幕的尺寸变化而变化,<br>  这个时候,我们需要用到css3新的单位,rem.<br>  rem是相对于根元素的字体大小的单位.我习惯称呼为动态rem.</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html&#123;font-size:100%;&#125;</span><br><span class="line">//完成后，你可以定义响应式字体：</span><br><span class="line">@media (min-width:640px)&#123;body&#123;font-size:1rem;&#125;&#125;</span><br><span class="line">@media (min-width:960px)&#123;body&#123;font-size:1.2rem;&#125;&#125;</span><br><span class="line">@media (min-width:1200px)&#123;body&#123;font-size:1.5rem;&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>  <strong>切记,!!!</strong>一定要重置根元素字体大小.</p>
+</li>
+</ul>
+<p>下面有几个例子可以参考看看:</p>
+<p><a href="http://js.jirengu.com/camusidemo/1/edit?html,output" target="_blank" rel="noopener">flex布局</a></p>
+</the>
       
     </div>
     
@@ -312,13 +361,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2018/03/23/草撒旦教的/">什么是生命周期</a></p>
+        <p><span>本文标题:</span><a  href="/2018/03/23/常见的几种布局/">几种常见的布局</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 Zymooon 的个人博客">Zymooon</a></p>
         <p><span>发布时间:</span>2018年03月23日 - 00时58分</p>
-        <p><span>最后更新:</span>2018年03月23日 - 02时54分</p>
+        <p><span>最后更新:</span>2018年03月24日 - 06时24分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/03/23/草撒旦教的/" title="什么是生命周期">http://yoursite.com/2018/03/23/草撒旦教的/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/03/23/草撒旦教的/　　作者: Zymooon" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/23/常见的几种布局/" title="几种常见的布局">http://yoursite.com/2018/03/23/常见的几种布局/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/03/23/常见的几种布局/　　作者: Zymooon" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -327,13 +376,27 @@
 
 
 
+<nav id="article-nav">
+  
+    <a  href="/2018/03/23/生命周期/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          生命周期中的哪些钩子函数
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
   
 </article>
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-理解布局的概念"><span class="toc-number">1.</span> <span class="toc-text">一:理解布局的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#静态布局"><span class="toc-number">1.1.</span> <span class="toc-text">静态布局:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弹性布局"><span class="toc-number">1.2.</span> <span class="toc-text">弹性布局:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自适应布局"><span class="toc-number">1.3.</span> <span class="toc-text">自适应布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式布局"><span class="toc-number">1.4.</span> <span class="toc-text">响应式布局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-响应式布局的步骤"><span class="toc-number">2.</span> <span class="toc-text">二:响应式布局的步骤:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#布局及设置meta标签"><span class="toc-number">2.1.</span> <span class="toc-text">布局及设置meta标签:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过媒体查询来设置样式-media-query"><span class="toc-number">2.2.</span> <span class="toc-text">通过媒体查询来设置样式 :media query</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置多种视图宽度"><span class="toc-number">2.3.</span> <span class="toc-text">设置多种视图宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字体设置"><span class="toc-number">2.4.</span> <span class="toc-text">字体设置</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -380,14 +443,16 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a  href="/2018/03/23/生命周期/" title="上一篇: 生命周期中的哪些钩子函数">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
             <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/草撒旦教的/">什么是生命周期</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/24/11/">11</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/生命周期/">生命周期中的哪些钩子函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/常见的几种布局/">几种常见的布局</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
