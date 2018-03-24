@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="texte： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
+<meta name="description" content="hexo + node.js 创建博客： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="texte">
+<meta property="og:title" content="hexo + node.js 创建博客">
 <meta property="og:url" content="http://yoursite.com/2018/03/24/texte/index.html">
 <meta property="og:site_name" content="懒人漫游">
-<meta property="og:description" content="texte： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
+<meta property="og:description" content="hexo + node.js 创建博客： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-24T02:40:51.957Z">
+<meta property="og:updated_time" content="2018-03-24T02:47:45.410Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="texte">
-<meta name="twitter:description" content="texte： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
+<meta name="twitter:title" content="hexo + node.js 创建博客">
+<meta name="twitter:description" content="hexo + node.js 创建博客： 本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客">
 
 
 
@@ -99,7 +99,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":22,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
@@ -125,7 +125,7 @@
 
 
 
-  <title>texte | 懒人漫游</title>
+  <title>hexo + node.js 创建博客 | 懒人漫游</title>
   
 
 
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">texte</h1>
+          <h1 class="post-title" itemprop="name headline">hexo + node.js 创建博客</h1>
         
 
         <div class="post-meta">
@@ -324,7 +324,7 @@
       
 
       
-        <p><strong> texte：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客<br><a id="more"></a></excerpt></p>
+        <p><strong> hexo + node.js 创建博客：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>本文将详细介绍如何使用hexo + node.js 打造自己的轻量级博客<br><a id="more"></a></excerpt></p>
 <the rest="" of="" contents="" |="" 余下全文=""></the>
       
     </div>
@@ -342,11 +342,9 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/2018/03/24/texte/">texte</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zymooon 的个人博客">Zymooon</a></p>
   <p><span>发布时间:</span>2018年03月24日 - 10:03</p>
-  <p><span>最后更新:</span>2018年03月24日 - 10:03</p>
-  <p><span>原始链接:</span><a href="/2018/03/24/texte/" title="texte">http://yoursite.com/2018/03/24/texte/</a>
+  <p><span>原始链接:</span><a href="/2018/03/24/texte/" title="hexo + node.js 创建博客">http://yoursite.com/2018/03/24/texte/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/24/texte/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
@@ -455,6 +453,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -616,6 +616,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -648,10 +650,10 @@
 
 
 
-
-
   
   
+
+
 
 
 
@@ -699,7 +701,7 @@
 
   
   
-    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 

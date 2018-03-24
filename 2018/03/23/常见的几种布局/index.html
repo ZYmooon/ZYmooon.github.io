@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="懒人漫游">
 <meta property="og:description" content="几种常见的布局： 理解布局的概念">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-24T02:37:32.585Z">
+<meta property="og:updated_time" content="2018-03-24T03:31:52.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="几种常见的布局">
 <meta name="twitter:description" content="几种常见的布局： 理解布局的概念">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":22,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
@@ -405,6 +405,34 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
       
         <div>
           
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>文章作者:</span><a href="/" title="访问 Zymooon 的个人博客">Zymooon</a></p>
+  <p><span>发布时间:</span>2018年03月23日 - 00:03</p>
+  <p><span>原始链接:</span><a href="/2018/03/23/常见的几种布局/" title="几种常见的布局">http://yoursite.com/2018/03/23/常见的几种布局/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/23/常见的几种布局/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
         </div>
       
     
@@ -456,8 +484,8 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/24/texte/" rel="prev" title="texte">
-                texte <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/24/texte/" rel="prev" title="hexo + node.js 创建博客">
+                hexo + node.js 创建博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -504,6 +532,8 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -690,6 +720,8 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -722,10 +754,10 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
 
 
 
-
-
   
   
+
+
 
 
 
@@ -773,7 +805,7 @@ minimum-scale=1.0,user-scalable=no&quot; /&gt;</code></p>
 
   
   
-    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
