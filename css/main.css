@@ -1856,7 +1856,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6e7fff;
+  background: #069046;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3036,4 +3036,7 @@ body {
 .fa-arrow-up {
   padding: 10px;
   font-size: 30px;
+}
+.posts-expand .post-meta {
+  margin: 25px 0 60px 0;
 }
