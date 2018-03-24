@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-24T19:38:56.306Z</updated>
+  <updated>2018-03-24T19:44:55.746Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怎么解析域名</title>
+    <link href="http://yoursite.com/2018/03/25/%E6%80%8E%E4%B9%88%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/"/>
+    <id>http://yoursite.com/2018/03/25/怎么解析域名/</id>
+    <published>2018-03-24T19:41:40.000Z</published>
+    <updated>2018-03-24T19:44:55.746Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 怎么解析域名：</strong> <excerpt in="" index="" |="" 首页摘要=""></excerpt></p><a id="more"></a><the rest="" of="" contents="" |="" 余下全文=""><p>1、首先需要购买域名，我是在阿里云购买的，花20RMB买的是.top后缀的域名<br>2、解析域名</p><blockquote><ul><li>进入阿里云官网，登录自己的支付宝或者淘宝账号</li><li>登录成功后进入点击右上角，自己的头像，从左边的列表里找到“域名与网站”</li></ul></blockquote><p><img src="http://upload-images.jianshu.io/upload_images/8168023-33b5805d31b9c47c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><blockquote><p>继续点击域名</p></blockquote><p><img src="http://upload-images.jianshu.io/upload_images/8168023-8a10255e4bd8de90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><blockquote><p>点击需要解析的域名</p></blockquote><p>以下三条记录是自己添加的，一开始是空白的，按照该图添加自己的服务器ip，也就是红的部分</p><p><img src="http://upload-images.jianshu.io/upload_images/8168023-47787ee7254b61d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><p>3、回到桌面：开始&gt;运行&gt;cmd,输入<code>ping 域名</code><br>    看到如下显示，说明解析成功</p><p><img src="http://upload-images.jianshu.io/upload_images/8168023-242c11239c80fed3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><p>当显示 time out就说明解析不成功</p></the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 怎么解析域名：&lt;/strong&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;/excerpt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="计算机知识" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>简单了解webpack和npm</title>
