@@ -1900,7 +1900,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #44d9ff;
+  background: #980e91;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3023,11 +3023,11 @@ body {
   color: #000;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
 }
 .post-title {
-  font-size: 26px;
+  font-size: 24px !important;
 }
 .post {
   margin-top: 60px;
@@ -3072,4 +3072,10 @@ p {
 }
 .sidebar {
   background: rgba(50,57,66,0.71);
+}
+code {
+  font-size: 16px;
+}
+.line {
+  font-size: 16px;
 }
