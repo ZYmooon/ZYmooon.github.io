@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="懒人漫游">
 <meta property="og:description" content="vue页面加载出现代码怎么办：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-28T22:00:24.356Z">
+<meta property="og:updated_time" content="2018-04-02T23:30:39.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue页面加载出现代码怎么办">
 <meta name="twitter:description" content="vue页面加载出现代码怎么办：">
@@ -343,7 +343,9 @@
 <h2 id="我的解决方案"><a href="#我的解决方案" class="headerlink" title="我的解决方案"></a>我的解决方案</h2><p>由于我是编写多页面,不是单vue文件,所以,每一个页面都有自己的html文件,我直接加在head中</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">  &lt;style&gt;</span><br><span class="line">    [v-cloak] &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
 <p>然后在实例中加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot; v-cloak&gt;</span><br><span class="line">...</span><br><span class="line">/*-- code --*/</span><br><span class="line">...</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></the>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot; v-cloak&gt;</span><br><span class="line">...</span><br><span class="line">/*-- code --*/</span><br><span class="line">...</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>这样就解决了页面在加载过程中出现代码的小bug</p>
+</the>
       
     </div>
     
@@ -427,6 +429,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/04/03/call，apply的用法/" rel="prev" title="通过call教会你this">
+                通过call教会你this <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -508,7 +514,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

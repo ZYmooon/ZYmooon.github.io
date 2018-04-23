@@ -93,7 +93,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8168023-a6f0737747b8a40a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8168023-fe8f46533b216f15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/473">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/8168023-9b56f8ee60341655.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-24T17:53:11.103Z">
+<meta property="og:updated_time" content="2018-04-02T23:41:04.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="this详解">
 <meta name="twitter:description" content="this详解： 我们来谈谈this吧">
@@ -361,7 +361,7 @@
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.addEventListener(&apos;click&apos;, function(e)&#123;</span><br><span class="line">  console.log(this);</span><br><span class="line">    var me = this</span><br><span class="line">    setTimeout(function()&#123;</span><br><span class="line">        console.log(me);</span><br><span class="line">    &#125;, 200);</span><br><span class="line">&#125;, false)</span><br></pre></td></tr></table></figure>
 <p>  <img src="https://upload-images.jianshu.io/upload_images/8168023-fe8f46533b216f15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/473" alt="image.png"></p>
 <p>  如果在函数里申明了<code>var self = this</code>，那么第二个this就变掉了，相当于把第一个this代表的元素保存起来了，我们直接来看代码。如果看的有点绕的话，可以这么想，我可以不用_this，可以用me、self来代替_this，效果一样.</p>
-<h2 id="作为构造函数调用"><a href="#作为构造函数调用" class="headerlink" title="作为构造函数调用"></a>作为构造函数调用</h2><p>  所谓构造函数，就是通过这个函数生成一个新对象（object）。这时，this就指这个新对象</p>
+<h2 id="作为构造函数调用"><a href="#作为构造函数调用" class="headerlink" title="作为构造函数调用"></a>作为构造函数调用</h2><p>  所谓构造函数，就是通过这个函数生成一个新对象（object）。这时，this就指这个新对象。</p>
 <p>  new 运算符接受一个函数 F 及其参数：new F(arguments…)。这一过程分为三步：</p>
 <ul>
 <li><p>创建类的实例。这步是把一个空的对象的 <strong> </strong>proto__ __ 属性设置为 F.prototype 。</p>
@@ -562,7 +562,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
