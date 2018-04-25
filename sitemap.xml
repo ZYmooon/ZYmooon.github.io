@@ -4,7 +4,84 @@
   <url>
     <loc>http://yoursite.com/resume/index.html</loc>
     
-    <lastmod>2018-04-23T16:46:53.862Z</lastmod>
+    <lastmod>2018-04-25T21:56:55.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/25/%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    
+    <lastmod>2018-04-24T15:05:05.423Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/03/call%EF%BC%8Capply%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
+    
+    <lastmod>2018-04-24T15:04:56.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/23/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2018-04-24T15:04:47.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/04/%E5%8A%A8%E6%80%81rem/</loc>
+    
+    <lastmod>2018-04-24T15:04:19.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/23/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    
+    <lastmod>2018-04-24T15:03:06.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/24/hexo/</loc>
+    
+    <lastmod>2018-04-24T15:02:08.672Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/29/vue%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%87%BA%E7%8E%B0%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</loc>
+    
+    <lastmod>2018-04-24T14:58:28.397Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/25/ajax/</loc>
+    
+    <lastmod>2018-04-24T14:58:14.801Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/25/%E6%80%8E%E4%B9%88%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</loc>
+    
+    <lastmod>2018-04-24T14:57:23.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/23/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%83%E5%B1%80/</loc>
+    
+    <lastmod>2018-04-24T14:56:46.875Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/24/this%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2018-04-24T14:52:44.093Z</lastmod>
     
   </url>
   
@@ -12,62 +89,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2018-04-23T15:52:17.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/23/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</loc>
-    
-    <lastmod>2018-04-23T14:38:30.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/04/%E5%8A%A8%E6%80%81rem/</loc>
-    
-    <lastmod>2018-04-22T22:42:20.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/03/call%EF%BC%8Capply%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
-    
-    <lastmod>2018-04-02T23:42:48.685Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/24/this%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2018-04-02T23:41:04.442Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/29/vue%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%87%BA%E7%8E%B0%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E/</loc>
-    
-    <lastmod>2018-04-02T23:30:39.192Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
-    
-    <lastmod>2018-03-24T22:40:21.261Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/ajax/</loc>
-    
-    <lastmod>2018-03-24T22:18:13.490Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/%E6%80%8E%E4%B9%88%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</loc>
-    
-    <lastmod>2018-03-24T19:44:55.746Z</lastmod>
     
   </url>
   
@@ -82,27 +103,6 @@
     <loc>http://yoursite.com/2018/03/25/%E5%85%B3%E4%BA%8Ejs%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     
     <lastmod>2018-03-24T19:20:37.802Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/23/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%83%E5%B1%80/</loc>
-    
-    <lastmod>2018-03-24T18:24:34.294Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/24/hexo/</loc>
-    
-    <lastmod>2018-03-24T18:24:24.987Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/23/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    
-    <lastmod>2018-03-24T03:32:02.075Z</lastmod>
     
   </url>
   
