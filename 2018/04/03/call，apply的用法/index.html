@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="通过call教会你this：">
+<meta name="description" content="通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.这次来看看,怎么通过call来确定this.先看看apply,和call的用法 apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。fn.apply(context, [Array])具体实现看代码1234567var value = 100var o">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="通过call教会你this">
 <meta property="og:url" content="http://yoursite.com/2018/04/03/call，apply的用法/index.html">
 <meta property="og:site_name" content="懒人漫游">
-<meta property="og:description" content="通过call教会你this：">
+<meta property="og:description" content="通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.这次来看看,怎么通过call来确定this.先看看apply,和call的用法 apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。fn.apply(context, [Array])具体实现看代码1234567var value = 100var o">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-24T15:04:56.703Z">
+<meta property="og:updated_time" content="2018-05-03T19:19:43.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过call教会你this">
-<meta name="twitter:description" content="通过call教会你this：">
+<meta name="twitter:description" content="通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.这次来看看,怎么通过call来确定this.先看看apply,和call的用法 apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。fn.apply(context, [Array])具体实现看代码1234567var value = 100var o">
 
 
 
@@ -335,12 +335,38 @@
       
 
       
-        <p><strong> 通过call教会你this：</strong> <excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
-<a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文="">
+        <p>通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.<br>这次来看看,怎么通过call来确定this.<br>先看看apply,和call的用法</p>
+<h2 id="apply-方法调用一个函数-其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。"><a href="#apply-方法调用一个函数-其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。" class="headerlink" title="apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。"></a>apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。</h2><p><code>fn.apply(context, [Array])</code><br>具体实现看代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var value = 100</span><br><span class="line">var obj = &#123;value:200&#125;</span><br><span class="line">function fn(a,b) &#123;</span><br><span class="line">  console.log(this.value + a + b);</span><br><span class="line">&#125;</span><br><span class="line">fn(1,2)//103</span><br><span class="line">fn.apply(obj,[1,2])//203</span><br></pre></td></tr></table></figure></p>
+<h2 id="call-方法调用一个函数-其具有一个指定的this值和分别地提供的参数-参数的列表-。"><a href="#call-方法调用一个函数-其具有一个指定的this值和分别地提供的参数-参数的列表-。" class="headerlink" title="call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。"></a>call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。</h2><p><code>fn.call(context, arg1, arg2, ...)</code></p>
+<p>具体实现看代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var value = 100</span><br><span class="line">var obj = &#123;value:200&#125;</span><br><span class="line">function fn(a,b) &#123;</span><br><span class="line">  console.log(this.value + a + b);</span><br><span class="line">&#125;</span><br><span class="line">fn(1,2)//103</span><br><span class="line">fn.call(obj,1,2)//203</span><br></pre></td></tr></table></figure></p>
+<p>由此可见call apply，调用一个函数，传入函数执行上下文及参数,第一个参数都是希望设置的this对象，不同之处在于call方法接收参数列表，而apply接收参数数组<br>bind()方法创建一个新的函数, 当被调用时，将其this关键字设置为提供的值，在调用新函数时，在任何提供之前提供一个给定的参数序列。<code>fn.bind(context[, arg1[, arg2[, ...]]])</code></p>
+<p>大家都知道在JavaScript中的bind是用于绑定函数this指向的。bind方法会创建一个新函数，bind的第一个参数将作为新函数运行时的this，其余的参数将会在新函数后续被调用时位于其他实参前被传入。那么很明显，用bind函数可以很轻松的实现函数的curry化.</p>
+<ul>
+<li>返回新函数，调用新函数的返回值与调用旧函数的返回值相同</li>
+<li>新函数的this指向bind的第一个参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var value = 100</span><br><span class="line">var obj = &#123;</span><br><span class="line">  value:200</span><br><span class="line">&#125;</span><br><span class="line">function fn(a,b) &#123;</span><br><span class="line">  console.log(this.value + a + b);</span><br><span class="line">&#125;</span><br><span class="line">fn(1,2)//103</span><br><span class="line">fn.bind(obj)(1,2)//203</span><br></pre></td></tr></table></figure>
+<p>bind还可以这样使用，这样我们就不需要改变第二个this了，第二个this的上下文指的就是第一个this，而第一个this指的是绑定时间的这个元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">document.addEventListener(&apos;click&apos;, function(e)&#123;</span><br><span class="line">    console.log(this);</span><br><span class="line">    setTimeout(function()&#123;</span><br><span class="line">        console.log(this);</span><br><span class="line">    &#125;.bind(), 200);</span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure></p>
+<p>下面来实现获取数组中的最大值几种方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var arr = [78,22,3,199,0,-1,3]</span><br><span class="line"></span><br><span class="line">console.log(Math.max.apply(null, arr));</span><br><span class="line">console.log(Math.max.call(null,78,22,3,199,0,-1,3));</span><br><span class="line">console.log(Math.max.bind()(78,22,3,199,0,-1,3));</span><br><span class="line">console.log(Math.max(78,22,3,199,0,-1,3) );</span><br><span class="line">console.log(Math.max(...arr) );</span><br><span class="line"></span><br><span class="line">var arr = [78,22,3,199,0,-1,3]</span><br><span class="line"></span><br><span class="line">function arrayMax(arrs) &#123;</span><br><span class="line">    var max = arrs[0];</span><br><span class="line">    for(var i = 1; i &lt; arrs.length; i++) &#123;</span><br><span class="line">        if(arrs[i] &gt; max) &#123;</span><br><span class="line">            max = arrs[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return max;</span><br><span class="line">&#125;</span><br><span class="line">console.log(arrayMax(arr));//199</span><br></pre></td></tr></table></figure></p>
+<p>可以用apply,call,bind,…等方法直接获取数组的最大值，或者遍历数组</p>
+<h2 id="说了这么说-就是想让大家先了解下什么是call以及什么是apply"><a href="#说了这么说-就是想让大家先了解下什么是call以及什么是apply" class="headerlink" title="说了这么说,就是想让大家先了解下什么是call以及什么是apply"></a>说了这么说,就是想让大家先了解下什么是call以及什么是apply</h2><p>现在重点来了,正如文章开头所说的那样,我们来学习怎么通过call来确定this,据说看完之后,会再也不用担心如何确定this的值了.</p>
+<p>先来看端代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">  fn:function()&#123;</span><br><span class="line">    console.log(this)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = obj.fn</span><br><span class="line">obj.fn()//obj</span><br><span class="line">a()//window</span><br></pre></td></tr></table></figure></p>
+<p>纳尼,为毛2者之间的值不一样!!!why!!!<br>大兄弟,比被你的眼睛骗啦,虽然看着是一样的,但是实际上在调用的时候,不是一样的方式去执行</p>
+<h2 id="函数调用方式"><a href="#函数调用方式" class="headerlink" title="函数调用方式"></a>函数调用方式</h2><ul>
+<li>fn(p1, p2) </li>
+<li>obj.child.method(p1, p2)</li>
+<li>fn.call(context, p1, p2) // 先不讲 apply</li>
+</ul>
+<p>实际上,最后一种才是最正确的调用方式,举个例子,英国全称是”大不列颠及北爱尔兰联合王国”,但是人们为了方便直接叫英国,然后叫着叫着就不知道什么的北爱尔兰了,就知道英国英国,很厉害的国家.<br>扯远了,回到正题,函数的调用也是一样,因为fn(p1,p2)简单,好写,但是初学的,和我一样的刚接触js的同学,很懵逼,经常性的不知道this的值到底是什么,只能瞎猜,才对了就对了.但是弄懂缘由之后,我相信大家都不会再犯之前的错误了.</p>
+<p>我们来看代码,还是之前的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">  fn:function()&#123;</span><br><span class="line">    console.log(this)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = obj.fn</span><br></pre></td></tr></table></figure></p>
+<p>现在我们来分析,通过call的形式来调用 obj.fn<br><code>obj.foo.call(obj) //obj</code><br>这样是不是和之前的结果一样,不信的同学请自行运行一次</p>
+<p>现在再来看第二个,调用a()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//转换成a.call(undefined)</span><br><span class="line">//因为没有传context,所以this就是undefined</span><br><span class="line">//由于浏览器说,你没给我传this,那我就给你个this</span><br><span class="line">//this默认指向的是window,这个是浏览器规定死的,切记切记!</span><br></pre></td></tr></table></figure></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>this 就是你 call 一个函数时，传入的第一个参数。（请务必背下来「this 就是 call 的第一个参数」）</li>
+<li>如果你的函数调用形式不是 call 形式，请按照「转换代码」将其转换为 call 形式。</li>
+</ul>
+<p>本文参考自方应杭老师的<a href="https://zhuanlan.zhihu.com/p/23804247" target="_blank" rel="noopener">this 的值到底是什么</a></p>
 
-<h2 id="通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量"><a href="#通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量" class="headerlink" title="通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量."></a>通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.</h2><p>今天我要说的是,通过<code>call</code>方法可以明确 <code>this</code> 的指向</p>
-</the>
       
     </div>
     
@@ -520,7 +546,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -592,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量"><span class="nav-number">1.</span> <span class="nav-text">通过之前《this的详解》，知道了关于this的多种调用，不同的调用，指向的不同的变量.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#apply-方法调用一个函数-其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。"><span class="nav-number">1.</span> <span class="nav-text">apply() 方法调用一个函数, 其具有一个指定的this值，以及作为一个数组（或类似数组的对象）提供的参数。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#call-方法调用一个函数-其具有一个指定的this值和分别地提供的参数-参数的列表-。"><span class="nav-number">2.</span> <span class="nav-text">call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说了这么说-就是想让大家先了解下什么是call以及什么是apply"><span class="nav-number">3.</span> <span class="nav-text">说了这么说,就是想让大家先了解下什么是call以及什么是apply</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数调用方式"><span class="nav-number">4.</span> <span class="nav-text">函数调用方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>

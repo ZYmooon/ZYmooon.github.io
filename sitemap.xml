@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/05/04/call-apply-bind/</loc>
+    
+    <lastmod>2018-05-03T19:19:54.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/03/call%EF%BC%8Capply%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
+    
+    <lastmod>2018-05-03T19:19:43.627Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/29/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</loc>
+    
+    <lastmod>2018-04-29T16:57:29.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/24/this%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2018-04-29T15:17:33.685Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/25/%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3webpack%E5%92%8Cnpm/</loc>
+    
+    <lastmod>2018-04-29T14:32:35.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/25/%E5%85%B3%E4%BA%8Ejs%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    
+    <lastmod>2018-04-29T14:32:05.737Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/29/MongoDB%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2018-04-28T19:03:51.056Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/resume/resume.html</loc>
     
     <lastmod>2018-04-26T00:03:13.516Z</lastmod>
@@ -12,20 +61,6 @@
     <loc>http://yoursite.com/resume/index.html</loc>
     
     <lastmod>2018-04-25T23:59:00.244Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
-    
-    <lastmod>2018-04-24T15:05:05.423Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/03/call%EF%BC%8Capply%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
-    
-    <lastmod>2018-04-24T15:04:56.703Z</lastmod>
     
   </url>
   
@@ -86,30 +121,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/03/24/this%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2018-04-24T14:52:44.093Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2018-04-23T15:52:17.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3webpack%E5%92%8Cnpm/</loc>
-    
-    <lastmod>2018-03-24T19:38:56.306Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/25/%E5%85%B3%E4%BA%8Ejs%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    
-    <lastmod>2018-03-24T19:20:37.802Z</lastmod>
     
   </url>
   

@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="简单了解webpack和npm：">
+<meta name="description" content="如何全局安装一个 node 应用?npm install -g package.json 有什么作用？npm上发布包时，需要npm init生成package.json文件package.json中的信息来描述这个包,并提供包所需要的依赖 12345678910111213141516&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;gulp-use&amp;quot;,//发布npm包的时">
 <meta name="keywords" content="前端工程化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单了解webpack和npm">
 <meta property="og:url" content="http://yoursite.com/2018/03/25/简单了解webpack和npm/index.html">
 <meta property="og:site_name" content="懒人漫游">
-<meta property="og:description" content="简单了解webpack和npm：">
+<meta property="og:description" content="如何全局安装一个 node 应用?npm install -g package.json 有什么作用？npm上发布包时，需要npm init生成package.json文件package.json中的信息来描述这个包,并提供包所需要的依赖 12345678910111213141516&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;gulp-use&amp;quot;,//发布npm包的时">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-24T19:38:56.306Z">
+<meta property="og:updated_time" content="2018-04-29T14:32:35.714Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单了解webpack和npm">
-<meta name="twitter:description" content="简单了解webpack和npm：">
+<meta name="twitter:description" content="如何全局安装一个 node 应用?npm install -g package.json 有什么作用？npm上发布包时，需要npm init生成package.json文件package.json中的信息来描述这个包,并提供包所需要的依赖 12345678910111213141516&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;gulp-use&amp;quot;,//发布npm包的时">
 
 
 
@@ -335,10 +335,7 @@
       
 
       
-        <p><strong> 简单了解webpack和npm：</strong> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
-<the rest="" of="" contents="" |="" 余下全文="">
-
-<h2 id="如何全局安装一个-node-应用"><a href="#如何全局安装一个-node-应用" class="headerlink" title="如何全局安装一个 node 应用?"></a>如何全局安装一个 node 应用?</h2><p><code>npm install -g</code></p>
+        <h2 id="如何全局安装一个-node-应用"><a href="#如何全局安装一个-node-应用" class="headerlink" title="如何全局安装一个 node 应用?"></a>如何全局安装一个 node 应用?</h2><p><code>npm install -g</code></p>
 <h2 id="package-json-有什么作用？"><a href="#package-json-有什么作用？" class="headerlink" title="package.json 有什么作用？"></a>package.json 有什么作用？</h2><p>npm上发布包时，需要<code>npm init</code>生成package.json文件<br>package.json中的信息来描述这个包,并提供包所需要的依赖</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;gulp-use&quot;,//发布npm包的时候需要的，表示npm包的名字</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,//包的版本号</span><br><span class="line">  &quot;description&quot;: &quot;&quot;,//对于这个包的简单描述</span><br><span class="line">  &quot;main&quot;: &quot;index.js&quot;,//入口文件</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;//</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;keywords&quot;: [],// 关键字</span><br><span class="line">  &quot;author&quot;: &quot;&quot;,//作者</span><br><span class="line">  &quot;license&quot;: &quot;ISC&quot;,//</span><br><span class="line">  &quot;devDependencies&quot;: &#123;</span><br><span class="line">    &quot;gulp&quot;: &quot;^3.9.1&quot;,//所依赖的其他包的版本号</span><br><span class="line"> </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="npm-install-–save-app-与-npm-install-–save-dev-app有什么区别"><a href="#npm-install-–save-app-与-npm-install-–save-dev-app有什么区别" class="headerlink" title="npm install –save app 与 npm install –save-dev app有什么区别?"></a>npm install –save app 与 npm install –save-dev app有什么区别?</h2><ul>
@@ -387,7 +384,7 @@
 <p>Webpack 使用异步 I/O 和多级缓存提高运行效率，这使得 Webpack 能够以令人难以置信的速度快速增量编译。</p>
 <h2 id="npm-scripts是什么？如何使用？"><a href="#npm-scripts是什么？如何使用？" class="headerlink" title="npm scripts是什么？如何使用？"></a>npm scripts是什么？如何使用？</h2><p>npm 允许在package.json文件里面，使用scripts字段定义脚本命令。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;start&quot;: &quot;node ./bin/www&quot;,</span><br><span class="line">    &quot;webpack&quot;: &quot;webpack --config ./src/webpack.config.js&quot;,</span><br><span class="line">    &quot;watch&quot;: &quot;onchange \&quot;src/**/*.js\&quot;  \&quot;src/**/*.less\&quot; -- npm run webpack&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 <p>输入<br><code>npm run webpack</code><br> 或者<br> <code>npm run watch</code><br> 就可以执行对应的脚本<br>但是比如start 或 bulid 等，可以直接<code>npm start</code></p>
-</the>
+
       
     </div>
     
@@ -567,7 +564,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
