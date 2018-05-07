@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-03T20:03:16.426Z</updated>
+  <updated>2018-05-06T18:21:59.742Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象</title>
+    <link href="http://yoursite.com/2018/05/06/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://yoursite.com/2018/05/06/面向对象/</id>
+    <published>2018-05-06T13:23:39.000Z</published>
+    <updated>2018-05-06T18:21:59.742Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="理解对象"><a href="#理解对象" class="headerlink" title="理解对象"></a>理解对象</h1><h2 id="js中的对象"><a href="#js中的对象" class="headerlink" title="js中的对象"></a>js中的对象</h2><p>JS 中的对象是一系列无序 key: value 的集合<br>例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var  obj = &#123;a:1,b:3,c:8&#125;</span><br><span class="line">var person = &#123;</span><br><span class="line">  name:&apos;小明&apos;,</span><br><span class="line">  age: 15,</span><br><span class="line">  sayHello:function()&#123;</span><br><span class="line">    console.log(&quot;hello,I&apos;m:&quot;+this.name)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>我们可以通过 对象.属性来获取对应属性的值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj.a()//1</span><br><span class="line">console.log(person.name)//小明</span><br><span class="line">person.sayHello()//hello,I&apos;m:小明</span><br></pre></td></tr></table></figure></p><h1 id="构造对象"><a href="#构造对象" class="headerlink" title="构造对象"></a>构造对象</h1><p>我们可以抛开类，使用字面量来构造一个对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var obj1 = &#123;</span><br><span class="line">  name: &apos;小明&apos;,</span><br><span class="line">  gender: &apos;男&apos;,</span><br><span class="line">  age: 15,</span><br><span class="line">  say: function()&#123;</span><br><span class="line">     console.log(this.name+&quot; , &quot;+this.gender+&quot; ,今年&quot;+this.age);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var obj2 = &#123;</span><br><span class="line">  name: &apos;小红&apos;,</span><br><span class="line">  gender: &apos;女&apos;,</span><br><span class="line">  age: 16</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="问题来了"><a href="#问题来了" class="headerlink" title="问题来了:"></a>问题来了:</h3><p>这样构造有两个明显问题</p><ul><li>太麻烦了，每次构建一个对象都是复制一遍代码</li><li>如果想个性化，只能通过手工赋值，使用者必需了解对象详细</li></ul><p>这两个问题其实也是我们不能抛开类的重要原因，也是类的作用</p><h3 id="使用函数做自动化"><a href="#使用函数做自动化" class="headerlink" title="使用函数做自动化"></a>使用函数做自动化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function createObj(name,gender, age) &#123;</span><br><span class="line">  var obj = &#123;</span><br><span class="line">    name: name,</span><br><span class="line">    gender: gender,</span><br><span class="line">    age: age,</span><br><span class="line">    sayHello: function() &#123;</span><br><span class="line">      console.log(this.name + &quot; , &quot; + this.gender + &quot; ,今年&quot; + this.age);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return obj</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var obj2 = createObj(&quot;小红&quot;, &quot;女&quot;, 16);</span><br><span class="line">var obj3 = createObj(&quot;小明&quot;,&quot;男&quot;,15)</span><br><span class="line"></span><br><span class="line">obj2.sayHello();//小红 , 女 ,今年16</span><br><span class="line">obj3.sayHello();//小明 , 男 ,今年15</span><br></pre></td></tr></table></figure><p>我们通过创建一个函数来实现自动创建对象的过程，至于个性化通过参数实现，开发者不必关注细节，只需要传入指定参数即可</p><h3 id="问题来了-1"><a href="#问题来了-1" class="headerlink" title="问题来了"></a>问题来了</h3><p>这种方法解决了构造过程复杂，需要了解细节的问题，但是构造出来的对象类型都是Object，没有识别度</p><p>这个时候需要用到 <strong>new</strong> 关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function createObj(name,gender,age)&#123;</span><br><span class="line">  this.name = name</span><br><span class="line">  this.gender = gender</span><br><span class="line">  this.age = age</span><br><span class="line">  this.sayHello = function()&#123;</span><br><span class="line">    console.log(this.name + &quot; , &quot; + this.gender + &quot; ,今年&quot; + this.age);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var p1 = new createObj(&quot;小红&quot;, &quot;女&quot;, 16);</span><br><span class="line">var p2 = new createObj(&quot;小明&quot;,&quot;男&quot;,15)</span><br><span class="line"></span><br><span class="line">p1.sayHello()</span><br><span class="line">p2.sayHello()</span><br></pre></td></tr></table></figure></p><p>其实new createObj在执行的过程中,new做了几件事</p><ul><li>创建一个空对象 {},代号xxx</li><li>执行 Person 函数，执行过程中对 this 操作就是对 xxx 进行操作</li><li>函数执行完后返回刚刚创建的 xxx</li><li>把 tmpObj 赋值给 p (p也指向同一个对象)</li></ul><h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><p>instanceof是一个操作符，可以判断对象是否为某个类型的实例</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p1 instanceof createObj; // true</span><br><span class="line">p1 instanceof Object;// true</span><br></pre></td></tr></table></figure><p>instanceof判断的是对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 instanceof Number; // false</span><br></pre></td></tr></table></figure></p><h3 id="问题来了-2"><a href="#问题来了-2" class="headerlink" title="问题来了"></a>问题来了</h3><p>构造函数在解决了上面所有问题，同时为实例带来了类型，但可以注意到每个实例printName方法实际上作用一样，但是每个实例要重复一遍，大量对象存在的时候是浪费内存.</p><h1 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h1><ul><li><p>任何函数使用new表达式就是构造函数</p></li><li><p>每个函数都自动添加一个名称为prototype属性，这是一个对象</p></li><li><p>每个对象都有一个内部属性<code>__proto__</code>(规范中没有指定这个名称，但是浏览器都这么实现的) 指向其类型的prototype属性，类的实例也是对象，其<code>__proto__</code>属性指向“类”的prototype</p></li></ul><p><img src="http://p61rbcy24.bkt.clouddn.com/__proto__2.png" alt="tu"></p><p>如图:</p><ul><li>我们通过函数定义了类Person，类（函数）自动获得属性prototype</li><li>每个类的实例都会有一个内部属性<strong>proto</strong>，指向类的prototype属性</li></ul><h1 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h1><p>之前介绍过instanceof操作符，判断一个对象是不是某个类型的实例</p><p><code>[1, 2, 3] instanceof Array; //true</code></p><p>可以看到[1, 2, 3]是类型Array的实例</p><p><code>[1, 2, 3] instanceof Object; //true</code></p><p>这个结果有些匪夷所思，怎么又是Array的实例，又是Object的实例，这不是乱套了</p><p>其实这个现象在日常生活中很常见其实，比如我们有两种类型</p><ul><li>类人猿</li><li>动物</li></ul><p>我们发现黑猩猩既是类人猿这个类的物种（实例），也是动物的实例</p><p>是不是悟出其中的门道了，类人猿是动物的一种，也就是说我们的两个类型之间有一种父子关系</p><p>这就是传说中的继承，JavaScript正是通过原型链实现继承机制的</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;理解对象&quot;&gt;&lt;a href=&quot;#理解对象&quot; class=&quot;headerlink&quot; title=&quot;理解对象&quot;&gt;&lt;/a&gt;理解对象&lt;/h1&gt;&lt;h2 id=&quot;js中的对象&quot;&gt;&lt;a href=&quot;#js中的对象&quot; class=&quot;headerlink&quot; title=&quot;js中的对
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈XSS和CSRF攻击</title>
+    <link href="http://yoursite.com/2018/05/04/%E6%B5%85%E8%B0%88XSS%E5%92%8CCSRF%E6%94%BB%E5%87%BB/"/>
+    <id>http://yoursite.com/2018/05/04/浅谈XSS和CSRF攻击/</id>
+    <published>2018-05-03T20:09:11.000Z</published>
+    <updated>2018-05-03T20:10:56.119Z</updated>
+    
+    <content type="html"><![CDATA[<p>XSS又称CSS，全称Cross SiteScript，跨站脚本攻击，是Web程序中常见的漏洞，XSS属于被动式且用于客户端的攻击方式，所以容易被忽略其危害性。其原理是攻击者向有XSS漏洞的网站中输入(传入)恶意的HTML代码，当其它用户浏览该网站时，这段HTML代码会自动执行，从而达到攻击的目的。如，盗取用户Cookie、破坏页面结构、重定向到其它网站等。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;XSS又称CSS，全称Cross SiteScript，跨站脚本攻击，是Web程序中常见的漏洞，XSS属于被动式且用于客户端的攻击方式，所以容易被忽略其危害性。其原理是攻击者向有XSS漏洞的网站中输入(传入)恶意的HTML代码，当其它用户浏览该网站时，这段HTML代码会自动
+      
+    
+    </summary>
+    
+    
+      <category term="web安全" scheme="http://yoursite.com/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>call apply bind 区别</title>

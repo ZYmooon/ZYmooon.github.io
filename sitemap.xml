@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/resume/resume.html</loc>
+    
+    <lastmod>2018-05-07T20:58:59.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/06/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+    
+    <lastmod>2018-05-06T18:21:59.742Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/05/04/%E6%B5%85%E8%B0%88XSS%E5%92%8CCSRF%E6%94%BB%E5%87%BB/</loc>
+    
+    <lastmod>2018-05-03T20:10:56.119Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/05/04/call-apply-bind/</loc>
     
     <lastmod>2018-05-03T20:03:16.426Z</lastmod>
@@ -40,13 +61,6 @@
     <loc>http://yoursite.com/2018/03/25/%E5%85%B3%E4%BA%8Ejs%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     
     <lastmod>2018-04-29T14:32:05.737Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/resume/resume.html</loc>
-    
-    <lastmod>2018-04-26T00:03:13.516Z</lastmod>
     
   </url>
   
